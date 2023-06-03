@@ -59,8 +59,13 @@ const smallerThanCurr = arr => {
 };
 
 const twoSum = (arr, target) => {
-
-  // Your code here
+ for(let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length; i++) {
+    if(arr[j] + arr[i] === target)
+    return true
+  }
+ }
+  return false// Your code here
 };
 
 const secondLargest = arr => {
