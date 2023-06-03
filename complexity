@@ -1,0 +1,51 @@
+function pushTest() {
+
+  const arr = [];
+
+  for (let i = 0; i < n; i++) {
+    arr.push(i);
+  }
+
+  return arr;
+}
+//Time complexity o(1) Space complexity 0(n)
+let n = Math.random() * (100000 - 0);
+console.time(`pushTest(${n}): `);
+pushTest(n);
+console.timeEnd(`pushTest(${n}): `);
+
+//******************************//
+
+
+function popTest(arr) {
+    const n = arr.length;
+
+    for (let i = 0 ; i < n ; i++) {
+      arr.pop();
+    }
+
+    return arr;
+  }
+//*******************************//
+
+  function unshiftTest(n) {
+    const arr = [];
+
+    for (let i = 0; i < n; i++) {
+      arr.unshift(i);
+    }
+
+    return arr;
+  }
+
+  //*********************************//
+
+  function shiftTest(arr) {
+    const n = arr.length;
+
+    for (let i = 0 ; i < n ; i++) {
+      arr.shift();
+    }
+
+    return arr;
+  }
